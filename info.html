@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Evento - Matrimonio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="burger" id="burger">
+      <div></div><div></div><div></div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay">
+    <a href="index.html">Home</a>
+    <a href="rsvp.html">RSVP</a>
+    <a href="info.html">Info</a>
+  </div>
+  <main>
+    <h1>Informazioni Evento</h1>
+    <p>Cerimonia e ricevimento presso Villa Bellissima, Via dei Fiori 12, Roma.</p>
+    <p>Ore 16:00 cerimonia, a seguire aperitivo e cena.</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!..." 
+      width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </main>
+  <script>
+    const burger=document.getElementById('burger');
+    const overlay=document.getElementById('navOverlay');
+    burger.addEventListener('click',()=>overlay.classList.toggle('show'));
+  </script>
+</body>
+</html>

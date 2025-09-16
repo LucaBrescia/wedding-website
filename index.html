@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrimonio Luca & Anna</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="burger" id="burger">
+      <div></div><div></div><div></div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay">
+    <a href="index.html">Home</a>
+    <a href="rsvp.html">RSVP</a>
+    <a href="info.html">Info</a>
+  </div>
+  <main>
+    <h1>Luca ❤️ Anna</h1>
+    <p>15 Giugno 2025</p>
+    <a href="evento.ics" class="button">📅 Aggiungi al calendario</a>
+  </main>
+  <script>
+    const burger=document.getElementById('burger');
+    const overlay=document.getElementById('navOverlay');
+    burger.addEventListener('click',()=>overlay.classList.toggle('show'));
+  </script>
+</body>
+</html>

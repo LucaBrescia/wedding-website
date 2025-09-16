@@ -1,0 +1,120 @@
+body {
+  margin:0;
+  font-family:'Helvetica Neue',Arial,sans-serif;
+  background:#a9d6e5;
+  color:#033649;
+  min-height:100vh;
+  text-align:center;
+}
+
+header {
+  position:fixed;
+  top:0; left:0;
+  width:100%;
+  background:transparent;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding:1rem;
+  z-index:200;
+}
+
+.burger {
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  cursor:pointer;
+  z-index:201;
+}
+
+.burger div {
+  width:30px;
+  height:4px;
+  background-color:#033649;
+  transition:all 0.3s;
+}
+
+.nav-overlay {
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background-color:rgba(3,54,73,0.95);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  transform:translateX(100%);
+  transition:transform 0.3s ease-in-out;
+  z-index:200;
+}
+
+.nav-overlay.show {
+  transform:translateX(0);
+}
+
+.nav-overlay a {
+  color:#fff;
+  text-decoration:none;
+  font-size:2rem;
+  margin:20px 0;
+}
+
+main {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding-top:80px;
+  min-height:100vh;
+}
+
+h1 {
+  font-size:3rem;
+  margin-bottom:0.5rem;
+  text-shadow:1px 1px 3px rgba(0,0,0,0.1);
+  color:#033649;
+}
+p {
+  font-size:1.2rem;
+  margin-bottom:1rem;
+}
+a.button, button {
+  display:inline-block;
+  background:#033649;
+  color:#a9d6e5;
+  padding:1rem 2rem;
+  border-radius:25px;
+  font-size:1.2rem;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+  margin-top:1rem;
+  box-shadow:0 3px 6px rgba(0,0,0,0.2);
+  transition:transform 0.2s;
+}
+a.button:hover, button:hover {
+  transform:scale(1.05);
+}
+form {
+  display:flex;
+  flex-direction:column;
+  width:300px;
+  gap:15px;
+  background:rgba(255,255,255,0.3);
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.2);
+}
+input, textarea {
+  padding:0.75rem;
+  border-radius:5px;
+  border:none;
+  font-size:1rem;
+}
+textarea {
+  resize:vertical;
+}
+iframe {
+  border-radius:10px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.2);
+}
